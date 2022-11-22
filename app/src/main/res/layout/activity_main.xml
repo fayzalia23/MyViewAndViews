@@ -15,11 +15,11 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="201dp"
+                android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:contentDescription="TODO"
                 android:scaleType="fitCenter"
-                android:src="@drawable/pixel_google" />
+                android:src="@drawable/acer" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,19 +33,20 @@
                 android:gravity="center_vertical"
                 android:padding="8dp"
                 android:scaleType="fitCenter"
-                android:text="@string/dummy_photos"
+                android:text="1 foto"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@android:color/white" />
         </FrameLayout>
 
         <TextView
+            android:id="@+id/tv_harga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/dummy_value"
+            android:text="Rp 13.650.000"
             android:textSize="32sp" />
 
         <TextView
@@ -55,16 +56,17 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:text="@string/stock" />
+            android:text="stock hanya 5 pcs" />
 
         <TextView
+            android:id="@+id/tv_deskripsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:lineSpacingMultiplier="1"
-            android:text="@string/content_text" />
+            android:text="Acer telah melaukan rilis Laptop Gaming termurah pertama yang ada di Indonesia.." />
 
         <TextView
             android:layout_width="match_parent"
@@ -73,7 +75,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/specification" />
+            android:text="specification" />
 
         <TableLayout
             android:layout_width="match_parent"
@@ -92,14 +94,14 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:layout_marginEnd="16dp"
-                    android:text="@string/display" />
+                    android:text="Display" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:layout_weight="1"
-                    android:text="@string/content_specs_display" />
+                    android:text="@string/Display" />
             </TableRow>
 
             <TableRow
@@ -112,14 +114,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:textSize="14sp"
-                    android:text="@string/size" />
+                    android:text="Resolusi Layar" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="14sp"
-                    android:text="@string/content_specs_size" />
+                    android:text="@string/resolusi" />
             </TableRow>
 
             <TableRow
@@ -132,14 +134,72 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:textSize="14sp"
-                    android:text="@string/battery" />
+                    android:text="Tipe Processor" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="14sp"
-                    android:text="@string/content_specs_battery" />
+                    android:text="@string/tipeprocessor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:text="Detail Processor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text="@string/detailprocessor" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:text="Memori" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text="@string/memori" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:text="Penyimpanan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:text="@string/penyimpanan" />
             </TableRow>
         </TableLayout>
 
@@ -150,7 +210,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
-            android:text="@string/seller" />
+            android:text="Fayza Aulia" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -172,11 +232,21 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/profile_image"
-                android:text="@string/my_name" />
+                android:text="Fayza Aulia" />
         </RelativeLayout>
 
         <Button
-            android:text="@string/buy"
+            android:id="@+id/btn_beli"
+            android:text="Beli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_dial_number"
+            android:text="@string/text_callpenjual"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
